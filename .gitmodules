@@ -1,0 +1,3 @@
+[submodule "flurry-ios-sdk"]
+	path = flurry-ios-sdk
+	url = git@github.com:flurry/flurry-ios-sdk.git
