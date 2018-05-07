@@ -1,9 +1,12 @@
 # Build and run
-1. Set the target's Bundle Identifier.
-2. Set the apiKey variable in AppDelegate.swift.
-3. Run the app. Enable push notifications when prompted. The push token will be logged to the console when it is received.
-4. Send test push messages to the token from the Flurry/Marketing/Campaigns web page.
-5. Observe logged messages.
+1. Clone the repository.
+2. Initialize and update submodules to use Flurry 8.5.0. `git submodule init` then `git submodule update`
+3. Open the project in Xcode 9.3.
+4. Set the target's Bundle Identifier.
+5. Set the apiKey variable in AppDelegate.swift.
+6. Run the app. Enable push notifications when prompted. The push token will be logged to the console when it is received.
+7. Send test push messages to the token from the Flurry/Marketing/Campaigns web page.
+8. Observe logged messages.
 
 # CoreLocation implementation fails to respond within 15 seconds and the app is killed
 1. Monitor app messages from the Console app.
