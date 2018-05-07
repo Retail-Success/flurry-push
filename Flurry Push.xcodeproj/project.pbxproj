@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F728BDD20A0D12000649B99 /* libFlurry_8.5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F728BDC20A0D12000649B99 /* libFlurry_8.5.0.a */; };
+		7F728BDF20A0D16C00649B99 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F728BDE20A0D16C00649B99 /* SystemConfiguration.framework */; };
+		7F728BE120A0D17300649B99 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F728BE020A0D17300649B99 /* CoreLocation.framework */; };
 		7F7DB1A5209BA9420073EECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DB1A4209BA9420073EECC /* AppDelegate.swift */; };
 		7F7DB1A7209BA9420073EECC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DB1A6209BA9420073EECC /* ViewController.swift */; };
 		7F7DB1AA209BA9420073EECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7DB1A8209BA9420073EECC /* Main.storyboard */; };
 		7F7DB1AC209BA9430073EECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F7DB1AB209BA9430073EECC /* Assets.xcassets */; };
 		7F7DB1AF209BA9430073EECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F7DB1AD209BA9430073EECC /* LaunchScreen.storyboard */; };
+		7F7DB1B8209BAC880073EECC /* libFlurryMessaging_8.5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7DB1B7209BAC880073EECC /* libFlurryMessaging_8.5.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F728BDB20A0CBF900649B99 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		7F728BDC20A0D12000649B99 /* libFlurry_8.5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_8.5.0.a; path = "flurry-ios-sdk/Flurry/libFlurry_8.5.0.a"; sourceTree = "<group>"; };
+		7F728BDE20A0D16C00649B99 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7F728BE020A0D17300649B99 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7F728BE220A0D21100649B99 /* Flurry Push.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Flurry Push.entitlements"; sourceTree = "<group>"; };
 		7F7DB1A1209BA9420073EECC /* Flurry Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flurry Push.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7DB1A4209BA9420073EECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F7DB1A6209BA9420073EECC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		7F7DB1AB209BA9430073EECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F7DB1AE209BA9430073EECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F7DB1B0209BA9430073EECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7DB1B7209BAC880073EECC /* libFlurryMessaging_8.5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurryMessaging_8.5.0.a; path = "flurry-ios-sdk/FlurryMessaging/libFlurryMessaging_8.5.0.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F728BE120A0D17300649B99 /* CoreLocation.framework in Frameworks */,
+				7F728BDD20A0D12000649B99 /* libFlurry_8.5.0.a in Frameworks */,
+				7F7DB1B8209BAC880073EECC /* libFlurryMessaging_8.5.0.a in Frameworks */,
+				7F728BDF20A0D16C00649B99 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				7F7DB1A3209BA9420073EECC /* Flurry Push */,
+				7F7DB1B6209BAC870073EECC /* Frameworks */,
 				7F7DB1A2209BA9420073EECC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +69,27 @@
 		7F7DB1A3209BA9420073EECC /* Flurry Push */ = {
 			isa = PBXGroup;
 			children = (
+				7F728BE220A0D21100649B99 /* Flurry Push.entitlements */,
 				7F7DB1A4209BA9420073EECC /* AppDelegate.swift */,
-				7F7DB1A6209BA9420073EECC /* ViewController.swift */,
-				7F7DB1A8209BA9420073EECC /* Main.storyboard */,
 				7F7DB1AB209BA9430073EECC /* Assets.xcassets */,
-				7F7DB1AD209BA9430073EECC /* LaunchScreen.storyboard */,
+				7F728BDB20A0CBF900649B99 /* Bridging-Header.h */,
 				7F7DB1B0209BA9430073EECC /* Info.plist */,
+				7F7DB1AD209BA9430073EECC /* LaunchScreen.storyboard */,
+				7F7DB1A8209BA9420073EECC /* Main.storyboard */,
+				7F7DB1A6209BA9420073EECC /* ViewController.swift */,
 			);
 			path = "Flurry Push";
+			sourceTree = "<group>";
+		};
+		7F7DB1B6209BAC870073EECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F728BE020A0D17300649B99 /* CoreLocation.framework */,
+				7F728BDE20A0D16C00649B99 /* SystemConfiguration.framework */,
+				7F728BDC20A0D12000649B99 /* libFlurry_8.5.0.a */,
+				7F7DB1B7209BAC880073EECC /* libFlurryMessaging_8.5.0.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +124,14 @@
 				TargetAttributes = {
 					7F7DB1A0209BA9420073EECC = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -280,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Flurry Push/Flurry Push.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5LKZR4E7G;
 				INFOPLIST_FILE = "Flurry Push/Info.plist";
@@ -287,10 +324,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.retailsuccess.Flurry-Push";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/flurry-ios-sdk/FlurryMessaging",
+					"$(PROJECT_DIR)/flurry-ios-sdk/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boutiquewindow.bless-dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flurry Push/Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/flurry-ios-sdk";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/flurry-ios-sdk/Flurry";
 			};
 			name = Debug;
 		};
@@ -298,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Flurry Push/Flurry Push.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D5LKZR4E7G;
 				INFOPLIST_FILE = "Flurry Push/Info.plist";
@@ -305,10 +352,19 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.retailsuccess.Flurry-Push";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/flurry-ios-sdk/FlurryMessaging",
+					"$(PROJECT_DIR)/flurry-ios-sdk/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boutiquewindow.bless-dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Flurry Push/Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/flurry-ios-sdk";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/flurry-ios-sdk/Flurry";
 			};
 			name = Release;
 		};
